@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react'
+import { Routes, Route } from 'react-router-dom';
+import HomeScreen from './Pages/HomeScreen';
+import IntroScreen from './Pages/IntroScreen';
+import AdminScreen from './Pages/AdminScreen';
+import LoginScreen from './Pages/LoginScreen';
+import Translation from './i18n/Translation';
+import { GlobalStyles } from './Static/GlobalStyles.style';
 
-function App() {
+
+
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Translation>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/Intro" element={<IntroScreen />} />
+        <Route path="/Login" element={<LoginScreen />} />
+        <Route path="/Admin" element={<AdminScreen />} />
+      </Routes>
+    </Translation>
   );
 }
 
-export default App;
+export default App
