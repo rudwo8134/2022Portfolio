@@ -19,22 +19,14 @@ const HomeScreen = () => {
   return (
     <>
       <Helmet>
-        <title>HomeScreen</title>
+        <title>HomeScreenzzz</title>
         <meta name="description" content="Shop our latest product now" />
         <link rel="canonical" href="/" />
       </Helmet>
-      <Wrapper>
-        <p>{t('welcome')}</p>
-        <button onClick={handleClick}>login</button>
-      </Wrapper>
     </>
   );
 };
 
-const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.header};
-`;
+
 
 export default HomeScreen;
