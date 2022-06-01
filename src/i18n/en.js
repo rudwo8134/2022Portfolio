@@ -1,7 +1,8 @@
 export const EN = {
   welcome: 'hello zz',
   Nav: {
-    HomePageName: 'ERIC',
+    HomePageName: 'UNIVERSITY BIBLE FELLOWSHIP',
+    subName: "Scarborough",
     Home: 'Home',
     Intro: 'Intro',
     About: 'About',
@@ -11,4 +12,9 @@ export const EN = {
     Light: 'LIGHT',
     Dark: 'DARK',
   },
+  HomeScreen: {
+    name: 'Home',
+    description:
+      'University Bible Fellowship (UBF) is an international evangelical church (non-denominational) and network of churches dedicated to Christ',
+    },
 };
